@@ -206,10 +206,6 @@ class DatePicker extends Component {
           <View style={[Style.dateInput, this.customStyles.dateInput, this.state.disabled && Style.disabled]}>
             <Text style={[Style.dateText, this.customStyles.dateText]}>{this.getDateStr()}</Text>
           </View>
-          <Image
-            style={[Style.dateIcon, this.customStyles.dateIcon]}
-            source={this.iconSource}
-          />
           {Platform.OS === 'ios' && <Modal
             transparent={true}
             visible={this.state.modalVisible}
